@@ -16,7 +16,7 @@ exclude = [
 
 
 [dependencies]
-ethers = { version = "2.0.8", default-features = true, features = ["abigen", "ws", "ipc", "rustls"] }
+ethers = { git = "https://github.com/roman-raizen/ethers-rs.git", default-features = true, features = ["abigen", "ws", "ipc", "rustls"] }
 tokio = { version = "1.29.1", features = ["full"] }
 futures = "0.3.28"
 indicatif = "0.17.5"
@@ -25,7 +25,7 @@ async-trait = "0.1.72"
 serde_json = "1.0.104"
 serde = "1.0.176"
 num-bigfloat = "1.6.2"
-uniswap_v3_math = {git ="https://github.com/0xKitsune/uniswap-v3-math.git", branch = "main"}
+uniswap_v3_math = {git = "https://github.com/roman-raizen/uniswap-v3-math.git", branch = "main"}
 regex = "1.9.1"
 spinoff = "0.7.0"
 arraydeque = {version = "0.5.1", optional = true}
